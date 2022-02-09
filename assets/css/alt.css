@@ -21,6 +21,9 @@ body {
     margin: auto;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 /* Container for the main flex row, this is "needed" to position and 
 scale the site correctly in the current layout */
 
@@ -140,6 +143,15 @@ a:hover {
     width: 21rem;
 }
 
+.links a{
+    text-decoration: none;
+}
+
+.links:hover {
+    box-shadow: 0 0 20px 0px rgb(165, 165, 165);
+
+}
+
 .cta {
     background-color: #000111;
     color: #ffffff;
@@ -205,4 +217,33 @@ footer .thanks {
     .about {
         padding: 1rem 0 1rem 0;
     }
+}
+
+
+.topBtn{
+    background: cyan;
+    position: fixed;
+    bottom: 16px;
+    right:20px;
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#fff;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.topBtn.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+}
+.topBtn:hover{
+    background: rgb(145, 176, 233);
+    text-decoration: none;
 }
