@@ -201,6 +201,7 @@ footer .thanks {
     }
     .links {
         width: 80%;
+        margin: 10px;
     }
     .banner {
         min-height: auto;

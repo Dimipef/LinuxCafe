@@ -198,6 +198,7 @@ footer .thanks {
     }
     .links {
         width: 80%;
+        margin: 10px;
     }
     .banner {
         min-height: auto;
@@ -218,6 +219,9 @@ footer .thanks {
     .about {
         padding: 1rem 0 1rem 0;
     }
+}
+
+@media screen and (max-width: 600px) {
     .topBtn{
         visibility: hidden;
     }
